@@ -39,7 +39,7 @@ body {
   margin: 0;
   font-family: "Quicksand", "Space Grotesk", system-ui, -apple-system, sans-serif;
   color: var(--text);
-  background: radial-gradient(120% 120% at 20% 20%, #fff3e9 0%, #f5faff 42%, #f7f4ec 100%);
+  background: radial-gradient(120% 120% at 20% 20%, #aa0d12 0%, #f5faff 42%, #2917f1 100%);
   min-height: 100vh;
 }
 
