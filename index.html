@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="POKECLASE: Explora la PokéAPI y busca Pokémon por nombre o ID. Proyecto IESTP Señor de la Divina Misericordia.">
+    <meta name="theme-color" content="#f2ede7">
+
+    <title>IESTP SDM | POKECLASE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="page">
+
+    <header class="hero">
+        <div class="brand">
+            <img src="https://www.isdm.edu.pe/images/logo---copia_cizweupl.png" alt="Logo del instituto">
+
+            <div class="brand-text">
+                <h1 class="brand-name">IESTP "Señor de la Divina Misericordia"</h1>
+                <h2 class="brand-note">Explorador oficial de PokéAPI</h2>
+
+                <p class="brand-presentacion">
+                    <strong>Estudiante:</strong> Barrenachea Guerrero Kenedy<br>
+                    <strong>Ciclo:</strong> VI<br>
+                    <strong>Carrera:</strong> Arquitectura de Plataformas y Servicios de Tecnologías de Información
+                </p>
+            </div>
+        </div>
+
+        <div class="titles">
+            <h1>POKECLASE</h1>
+            <p>Busca un Pokémon por <strong>nombre o ID</strong> y descubre a tu Pokémon favorito.</p>
+        </div>
+
+        <div class="actions">
+            <form id="search-form" class="search-form">
+                <label for="pokemon-input">Nombre o ID del Pokémon</label>
+
+                <div class="input-group">
+                    <input id="pokemon-input" type="text" placeholder="Ejemplo: charmander o 4"
+                           autocomplete="off" required>
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <section class="status" id="status" aria-live="polite"></section>
+
+    <section class="single" aria-live="polite">
+        <h2>Resultado individual</h2>
+        <div id="pokemon-card" class="card single-card empty">
+            <p class="placeholder">Vista de la información del Pokémon.</p>
+        </div>
+    </section>
+
+    <section class="fire-section">
+        <div class="section-header">
+            <h2>Pokémon por tipo</h2>
+            <p><strong>Selecciona un tipo de Pokémon que desees ver:</strong></p>
+            <br>
+
+            <div class="type-buttons">
+                <button id="normal-btn" class="type-btn">Normal</button>
+                <button id="fire-btn" class="type-btn">Fuego</button>
+                <button id="water-btn" class="type-btn">Agua</button>
+                <button id="grass-btn" class="type-btn">Planta</button>
+                <button id="electric-btn" class="type-btn">Eléctrico</button>
+
+                <button id="ice-btn" class="type-btn">Hielo</button>
+                <button id="fighting-btn" class="type-btn">Lucha</button>
+                <button id="poison-btn" class="type-btn">Veneno</button>
+                <button id="ground-btn" class="type-btn">Tierra</button>
+                <button id="flying-btn" class="type-btn">Volador</button>
+
+                <button id="psychic-btn" class="type-btn">Psíquico</button>
+                <button id="bug-btn" class="type-btn">Bicho</button>
+                <button id="rock-btn" class="type-btn">Roca</button>
+                <button id="ghost-btn" class="type-btn">Fantasma</button>
+                <button id="dragon-btn" class="type-btn">Dragón</button>
+
+                <button id="dark-btn" class="type-btn">Siniestro</button>
+                <button id="steel-btn" class="type-btn">Acero</button>
+                <button id="fairy-btn" class="type-btn">Hada</button>
+            </div>
+        </div>
+
+        <div id="type-grid" class="grid"></div>
+    </section>
+
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
